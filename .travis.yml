@@ -1,14 +1,10 @@
 language: php
 sudo: false
 script: php test.php
-before_deploy:
-      # Set up git user name and tag this commit
-      - git config --local user.name "Nitin-Er"
-      - git config --local user.email "nitin.makwana@digi-corp.com"
-      - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
-  api_key: iLzpDcZ_Ih9e2QFnOY30mg
+  user: "nitin.makwana@digi-corp.com"
+  password: "Nitin1@3"
   file: Files/test.txt 
   skip_cleanup: true
   on:
