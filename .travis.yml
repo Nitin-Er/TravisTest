@@ -11,5 +11,5 @@ deploy:
   skip_cleanup: true
   on:
     repo: Nitin-Er/TravisTest
-    tags: true
+    tags: false
     all_branches: true
