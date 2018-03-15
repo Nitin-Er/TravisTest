@@ -1,0 +1,15 @@
+language: php
+php:
+  - 7.1.9
+sudo: false
+script: test.php all
+deploy:
+  provider: releases
+  api_key:
+    secure: iLzpDcZ_Ih9e2QFnOY30mg
+  file: Files/test.txt 
+  skip_cleanup: true
+  on:
+    repo: Nitin-Er/TravisTest
+    tags: true
+    all_branches: true
