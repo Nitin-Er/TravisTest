@@ -1,6 +1,4 @@
 language: php
-php:
-  - 7.1.9
 sudo: false
 script: php test.php
 deploy:
@@ -11,5 +9,5 @@ deploy:
   skip_cleanup: true
   on:
     repo: Nitin-Er/TravisTest
-    tags: false
+    tags: true
     all_branches: true
