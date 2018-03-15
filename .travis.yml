@@ -2,7 +2,7 @@ language: php
 php:
   - 7.1.9
 sudo: false
-script: test.php all
+script: php test.php
 deploy:
   provider: releases
   api_key:
