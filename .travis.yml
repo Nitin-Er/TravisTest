@@ -3,6 +3,7 @@ sudo: false
 script: php test.php
 deploy:
   provider: releases
+  api_key: "iLzpDcZ_Ih9e2QFnOY30mg"
   user: "nitin.makwana@digi-corp.com"
   password: "Nitin1@3"
   file: Files/test.txt 
